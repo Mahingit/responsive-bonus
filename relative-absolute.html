@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid red;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+
+        }
+
+        #box-1 {
+            background-color: cornflowerblue;
+        }
+
+        #box-2 {
+            background-color: rebeccapurple;
+            position: relative;
+            /* relative mane position tulonamulok */
+            top: -30px;
+            /* jekhe chilo oikhan theke top theke 30px niche neme jabe 
+            - value-  top theke -30 dile top theke uporer dike 30px uthbe*/
+            left: 400px;
+            /* left theke 400px shore daaner dike jabe */
+        }
+
+        #box-3 {
+            background-color: aquamarine;
+            position: absolute;
+            /* absolute korar shathe shath eoor space khali hoye gese, 4th box or jayga niye nise */
+            top: 50px;
+            /* main html body er top theke 50px niche gese  */
+            /* box-3 er parent div container a kono position declair kora nai tai main bodyr shathe jacche */
+            left: 100px;
+
+        }
+
+        .container {
+            border: 3px solid blue;
+            position: relative;
+            /* container k position deyar shathe shathe box-3 main body theke container er bhitor chole ashche and container er height width onujai moove kortese */
+        }
+
+        #box-4 {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Explore relative and absolute one more time</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, consequatur, velit, nisi dolorem quibusdam at
+        in tempore omnis praesentium nihil doloremque. Fugit repudiandae itaque tenetur ullam recusandae sint officia
+        nemo corporis quod. Adipisci dicta nostrum unde, in dolorum molestiae? Sapiente!
+    </p>
+    <div class="container">
+        <div class="box" id="box-1">BOX-1</div>
+        <div class="box" id="box-2">BOX-2</div>
+        <div class="box" id="box-3">BOX-3</div>
+        <div class="box" id="box-4">BOX-4</div>
+    </div>
+</body>
+
+</html>
